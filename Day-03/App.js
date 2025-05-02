@@ -45,4 +45,6 @@ root.render(
     <Heading /> 
   </div>
 );
-         
+
+// Cross site scripting (XSS) is a security vulnerability that allows an attacker to inject malicious scripts into a web application. This can lead to unauthorized access to sensitive data, session hijacking, and other security issues. In React, XSS can occur if user input is not properly sanitized before being rendered in the UI. To prevent XSS attacks, you should always sanitize user input and avoid using dangerouslySetInnerHTML unless absolutely necessary.
+// React automatically escapes any values embedded in JSX, preventing XSS attacks. However, if you use dangerouslySetInnerHTML to render HTML content, you need to ensure that the content is safe and does not contain any malicious scripts. You can use libraries like DOMPurify to sanitize HTML content before rendering it in React.     
